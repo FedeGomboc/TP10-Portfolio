@@ -1,0 +1,27 @@
+[
+        {
+            "title": "Proyecto 1 - EasyEating",
+            "source": "https://github.com/FedeGomboc/FrontEasyEating",
+            "image": "http://localhost:3000/img/mock1.png"
+        },
+        {
+            "title": "Proyecto 2 - Ecommerce",
+            "source": "https://github.com/FedeGomboc/React-Ecommerce",
+            "image": "http://localhost:3000/img/mock2.png"
+        },
+        {
+            "title": "Proyecto 3 - Navigation",
+            "source": "https://github.com/FedeGomboc/TpNavigation",
+            "image": "http://localhost:3000/img/mock3.png"
+        },
+        {
+            "title": "Proyecto 4 - Juego de adivinar banderas",
+            "source": "https://github.com/FedeGomboc/JugandoConBanderas",
+            "image": "http://localhost:3000/img/mock4.png"
+        },
+        {
+            "title": "Proyecto 5 - Pokeapi",
+            "source": "https://github.com/FedeGomboc/PokeApi",
+            "image": "http://localhost:3000/img/mock5.png"
+        }
+]   

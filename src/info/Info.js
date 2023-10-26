@@ -1,11 +1,3 @@
-import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
-import easyeating from "../img/easyeating.png"
-
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
 
@@ -28,7 +20,7 @@ export const info = {
     lastName: "Gomboc",
     initials: "fg", // the example uses first and last, but feel free to use three or more if you like.
     position: "a Full Stack Developer",
-    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
+    selfPortrait: "", // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
@@ -87,32 +79,5 @@ export const info = {
         },
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
-    ],
-    portfolio: [ // This is where your portfolio projects will be detailed
-        {
-            title: "Proyecto 1 - EasyEating",
-            source: "https://github.com/FedeGomboc/FrontEasyEating", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
-        },
-        {
-            title: "Proyecto 2 - Ecommerce",
-            source: "https://github.com/FedeGomboc/React-Ecommerce",
-            image: mock2
-        },
-        {
-            title: "Proyecto 3 - Navigation",
-            source: "https://github.com/FedeGomboc/TpNavigation",
-            image: mock3
-        },
-        {
-            title: "Proyecto 4 - Juego de adivinar banderas",
-            source: "https://github.com/FedeGomboc/JugandoConBanderas",
-            image: mock4
-        },
-        {
-            title: "Proyecto 5 - Pokeapi",
-            source: "https://github.com/FedeGomboc/PokeApi",
-            image: mock5
-        }
-    ]
+    ]        
 }
