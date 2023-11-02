@@ -26,6 +26,11 @@ const links = [
         name: 'Mis creaciones',
         to: '/portfolio',
         active: 'portfolio'
+    },
+    {
+        name: 'Mis favoritos',
+        to: '/favoritos',
+        active: 'favoritos'
     }
 ]
 

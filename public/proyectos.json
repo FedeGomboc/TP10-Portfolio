@@ -2,26 +2,31 @@
         {
             "title": "Proyecto 1 - EasyEating",
             "source": "https://github.com/FedeGomboc/FrontEasyEating",
-            "image": "http://localhost:3000/img/mock1.png"
+            "image": "http://localhost:3000/img/mock1.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis purus id metus feugiat, ut tincidunt libero ultricies. Cras vel aliquet ex, ut ultrices risus. Vivamus sed egestas justo, eu lobortis lacus. Cras nunc est, volutpat vel ligula et, vehicula sodales metus. Morbi ultrices metus a urna auctor convallis. Quisque sit amet erat enim. Nulla id massa vel arcu porttitor varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vulputate, lacus at auctor pharetra, dui tortor tempus arcu, eget sodales dui orci imperdiet odio."
         },
         {
             "title": "Proyecto 2 - Ecommerce",
             "source": "https://github.com/FedeGomboc/React-Ecommerce",
-            "image": "http://localhost:3000/img/mock2.png"
+            "image": "http://localhost:3000/img/mock2.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis purus id metus feugiat, ut tincidunt libero ultricies. Cras vel aliquet ex, ut ultrices risus. Vivamus sed egestas justo, eu lobortis lacus. Cras nunc est, volutpat vel ligula et, vehicula sodales metus. Morbi ultrices metus a urna auctor convallis. Quisque sit amet erat enim. Nulla id massa vel arcu porttitor varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vulputate, lacus at auctor pharetra, dui tortor tempus arcu, eget sodales dui orci imperdiet odio."
         },
         {
             "title": "Proyecto 3 - Navigation",
             "source": "https://github.com/FedeGomboc/TpNavigation",
-            "image": "http://localhost:3000/img/mock3.png"
+            "image": "http://localhost:3000/img/mock3.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis purus id metus feugiat, ut tincidunt libero ultricies. Cras vel aliquet ex, ut ultrices risus. Vivamus sed egestas justo, eu lobortis lacus. Cras nunc est, volutpat vel ligula et, vehicula sodales metus. Morbi ultrices metus a urna auctor convallis. Quisque sit amet erat enim. Nulla id massa vel arcu porttitor varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vulputate, lacus at auctor pharetra, dui tortor tempus arcu, eget sodales dui orci imperdiet odio."
         },
         {
             "title": "Proyecto 4 - Juego de adivinar banderas",
             "source": "https://github.com/FedeGomboc/JugandoConBanderas",
-            "image": "http://localhost:3000/img/mock4.png"
+            "image": "http://localhost:3000/img/mock4.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis purus id metus feugiat, ut tincidunt libero ultricies. Cras vel aliquet ex, ut ultrices risus. Vivamus sed egestas justo, eu lobortis lacus. Cras nunc est, volutpat vel ligula et, vehicula sodales metus. Morbi ultrices metus a urna auctor convallis. Quisque sit amet erat enim. Nulla id massa vel arcu porttitor varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vulputate, lacus at auctor pharetra, dui tortor tempus arcu, eget sodales dui orci imperdiet odio."
         },
         {
             "title": "Proyecto 5 - Pokeapi",
             "source": "https://github.com/FedeGomboc/PokeApi",
-            "image": "http://localhost:3000/img/mock5.png"
+            "image": "http://localhost:3000/img/mock5.png",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis purus id metus feugiat, ut tincidunt libero ultricies. Cras vel aliquet ex, ut ultrices risus. Vivamus sed egestas justo, eu lobortis lacus. Cras nunc est, volutpat vel ligula et, vehicula sodales metus. Morbi ultrices metus a urna auctor convallis. Quisque sit amet erat enim. Nulla id massa vel arcu porttitor varius. Interdum et malesuada fames ac ante ipsum primis in faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vulputate, lacus at auctor pharetra, dui tortor tempus arcu, eget sodales dui orci imperdiet odio."
         }
 ]   

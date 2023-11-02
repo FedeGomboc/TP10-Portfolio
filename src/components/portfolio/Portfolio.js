@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import PortfolioBlock from "./PortfolioBlock";
+import PortfolioCard from "./PortfolioCard";
 import {Box, Grid} from "@mui/material";
 import axios from 'axios';
 
 export default function Portfolio() {
 
     const [proyectos, setProyectos] = useState([])
+    const [favoritos, setFavoritos] = useState([])
 
     useEffect(() => {        
         axios.get('proyectos.json')
@@ -23,7 +24,7 @@ export default function Portfolio() {
             <Grid container display={'flex'} justifyContent={'center'}>
                 {proyectos.map((proyecto,index) => (
                    <Grid item xs={12} md={6} key={index}>
-                       <PortfolioBlock image={proyecto.image} source={proyecto.source} title={proyecto.title} />
+                       <PortfolioCard proyecto={proyecto}/>
                    </Grid>
                 ))}
             </Grid>
