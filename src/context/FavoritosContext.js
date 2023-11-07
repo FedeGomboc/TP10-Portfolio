@@ -7,18 +7,27 @@ const FavoritosProvider = (props) => {
 
   let cantidadFavoritos = favoritos.length;
 
+  useEffect(() => {
+    if (localStorage.getItem("favoritos") != null) {
+      let storage = localStorage.getItem("favoritos");
+      setFavoritos(JSON.parse(storage));
+    }
+  }, []);
+
   const AgregarFavorito = (favorito) => {
-    console.log([...favoritos, favorito])
     setFavoritos([...favoritos, favorito]);
+    localStorage.setItem("favoritos", JSON.stringify([...favoritos, favorito]))
   };
 
   const ResetearFavoritos = () => {
     setFavoritos([]);
+    localStorage.removeItem("favoritos")
   };
 
   const BorrarFavorito = (deletedItem) => {
     let newArray = favoritos.filter((item) => item.id !== deletedItem.id);
     setFavoritos(newArray);
+    localStorage.setItem("favoritos", JSON.stringify(newArray));
   };
 
   return (

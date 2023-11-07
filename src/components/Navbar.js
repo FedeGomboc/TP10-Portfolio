@@ -4,6 +4,12 @@ import Toggler from "./home/Toggler";
 import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
 import {info} from "../info/Info";
+import { Badge } from '@mui/icons-material';
+import StarIcon from '@mui/icons-material/Star';
+import { IconButton } from '@mui/material';
+import StyledBadge from '@mui/material/Badge';
+import { FavoritosContext } from '../context/FavoritosContext';
+import { useContext } from 'react';
 
 const links = [
     {
@@ -35,6 +41,7 @@ const links = [
 ]
 
 export default function Navbar({darkMode, handleClick}) {
+    const {cantidadFavoritos } = useContext(FavoritosContext);
     const location = useLocation()
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
@@ -54,6 +61,13 @@ export default function Navbar({darkMode, handleClick}) {
                 ))}
                 <li>
                     <Toggler darkMode={darkMode} handleClick={handleClick}/>
+                </li>
+                <li>
+                <IconButton aria-label="cart">
+                    <StyledBadge badgeContent={cantidadFavoritos} color="secondary">
+                        <StarIcon />
+                    </StyledBadge>
+                </IconButton>
                 </li>
             </Box>
         </Box>
