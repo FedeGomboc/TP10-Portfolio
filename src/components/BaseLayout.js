@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import Style from './BaseLayout.module.scss'
 import Navbar from "./Navbar";
-import Home from "./home/Home";
-import About from "./about/About";
-import Portfolio from "./portfolio/Portfolio";
+import Home from "../pages/home/Home";
+import About from "../pages/about/About";
+import Portfolio from "../pages/portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
-import Favoritos from './favoritos/Favoritos';
+import Favoritos from '../pages/favoritos/Favoritos';
+import ContactForm from './ContactForm';
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -44,9 +45,9 @@ export default function BaseLayout() {
                </Routes>
             </Grid>
             <Grid item>
-               <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
-                    py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
-                  <p>&copy; Hecho por Federico Gomboc ; 2023</p>
+               <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'} py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
+                  <ContactForm/>
+                  <p>Realizado por Federico Gomboc - 2023</p>
                </Box>
             </Grid>
          </Grid>

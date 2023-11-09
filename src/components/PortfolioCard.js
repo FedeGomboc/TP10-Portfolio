@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import IconLink from "./IconLink";
+import React from "react";
+import IconLink from "../pages/portfolio/IconLink";
 import { Box } from "@mui/material";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import {FavoritosContext} from '../../context/FavoritosContext'
+import {FavoritosContext} from '../context/FavoritosContext'
 
 function PortfolioCard({proyecto}) {
 

@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { FavoritosContext } from "../../context/FavoritosContext";
 import { Button } from "@mui/material";
-import PortfolioCard from "../portfolio/PortfolioCard";
-import { Container, Row, Col } from "react-bootstrap";
-import {Box, Grid} from "@mui/material";
+import PortfolioCard from "../../components/PortfolioCard";
+import {Grid} from "@mui/material";
 
 
 export default function Favoritos() {
@@ -13,7 +12,7 @@ export default function Favoritos() {
     <>
       <div className="container">
         <div style={{display: "flex", alignItems: "center", flexDirection: "column",}}>
-          <h1 className="pt-5" style={{ fontWeight: "bold", marginTop: 50 }}>FAVOURITES</h1>
+          <h1 className="pt-5" style={{ fontWeight: "bold", marginTop: 50 }}>FAVORITOS</h1>
           {cantidadFavoritos > 0 ? (
             <Button className="m-4" onClick={() => ResetearFavoritos()} variant="primary">Borrar favoritos</Button>
           ) : (

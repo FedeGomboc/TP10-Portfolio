@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import PortfolioCard from "./PortfolioCard";
+import PortfolioCard from "../../components/PortfolioCard";
 import {Box, Grid} from "@mui/material";
 import axios from 'axios';
 
 export default function Portfolio() {
 
     const [proyectos, setProyectos] = useState([])
-    const [favoritos, setFavoritos] = useState([])
 
     useEffect(() => {        
         axios.get('proyectos.json')

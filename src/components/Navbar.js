@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import Style from './Navbar.module.scss';
-import Toggler from "./home/Toggler";
+import Toggler from "../pages/home/Toggler";
 import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
-import {info} from "../info/Info";
-import { Badge } from '@mui/icons-material';
+import {info} from "../pages/info/Info";
 import StarIcon from '@mui/icons-material/Star';
 import { IconButton } from '@mui/material';
 import StyledBadge from '@mui/material/Badge';
