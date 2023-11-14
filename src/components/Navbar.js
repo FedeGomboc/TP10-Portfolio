@@ -62,11 +62,13 @@ export default function Navbar({darkMode, handleClick}) {
                     <Toggler darkMode={darkMode} handleClick={handleClick}/>
                 </li>
                 <li>
+                    <Link to='/favoritos'>
                 <IconButton aria-label="cart">
                     <StyledBadge badgeContent={cantidadFavoritos} color="secondary">
                         <StarIcon />
                     </StyledBadge>
                 </IconButton>
+                </Link>
                 </li>
             </Box>
         </Box>

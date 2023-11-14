@@ -3,20 +3,14 @@ import React, { createContext, useEffect, useState } from "react";
 export const FavoritosContext = createContext();
 
 const FavoritosProvider = (props) => {
-  const [favoritos, setFavoritos] = useState([]);
+  let storage = localStorage.getItem("favoritos") ? JSON.parse(localStorage.getItem("favoritos")) : [];
 
-  let cantidadFavoritos = favoritos.length;
+  const [favoritos, setFavoritos] = useState(storage);
 
-  useEffect(() => {
-    if (localStorage.getItem("favoritos") != null) {
-      let storage = localStorage.getItem("favoritos");
-      setFavoritos(JSON.parse(storage));
-    }
-  }, []);
+  let cantidadFavoritos = favoritos.length;  
 
   const AgregarFavorito = (favorito) => {
-    setFavoritos([...favoritos, favorito]);
-    localStorage.setItem("favoritos", JSON.stringify([...favoritos, favorito]))
+    setFavoritos([...favoritos, favorito]);    
   };
 
   const ResetearFavoritos = () => {
@@ -25,10 +19,16 @@ const FavoritosProvider = (props) => {
   };
 
   const BorrarFavorito = (deletedItem) => {
-    let newArray = favoritos.filter((item) => item.id !== deletedItem.id);
-    setFavoritos(newArray);
-    localStorage.setItem("favoritos", JSON.stringify(newArray));
+    console.log('favoritos ',favoritos)
+    let arrayNuevo = favoritos.filter((item) => item.id != deletedItem.id);
+    console.log('deletedItem ',deletedItem);
+    console.log('arrayNuevo ',arrayNuevo)
+    setFavoritos(arrayNuevo);    
   };
+
+  useEffect(()=>{
+    localStorage.setItem("favoritos", JSON.stringify(favoritos));
+  },[favoritos])
 
   return (
     <FavoritosContext.Provider

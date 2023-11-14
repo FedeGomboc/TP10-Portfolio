@@ -27,7 +27,6 @@ export default function Favoritos() {
             {favoritos.map((project, index) => (
               <Grid item xs={12} md={6} key={index}>
                 <PortfolioCard proyecto={project} />
-               {/*  <Button className="m-4" onClick={() => BorrarFavorito()} variant="primary">Borrar favorito</Button> */}
               </Grid>
             ))}
           </Grid>

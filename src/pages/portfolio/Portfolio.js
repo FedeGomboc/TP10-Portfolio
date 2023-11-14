@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import PortfolioCard from "../../components/PortfolioCard";
 import {Box, Grid} from "@mui/material";
 import axios from 'axios';
+import { CreacionesContext } from '../../context/CreacionesContext';
 
 export default function Portfolio() {
 
-    const [proyectos, setProyectos] = useState([])
-
-    useEffect(() => {        
+    const { proyectos } = useContext(CreacionesContext)
+    
+    /* useEffect(() => {        
         axios.get('proyectos.json')
         .then((response) => {
            let data = response.data
@@ -16,7 +17,7 @@ export default function Portfolio() {
         .catch((error) => {
             console.log(error)
         })
-        },[])
+        },[]) */
 
     return (
         <Box>
