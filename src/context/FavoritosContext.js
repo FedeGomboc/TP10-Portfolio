@@ -14,8 +14,7 @@ const FavoritosProvider = (props) => {
   };
 
   const ResetearFavoritos = () => {
-    setFavoritos([]);
-    localStorage.removeItem("favoritos")
+    setFavoritos([]);    
   };
 
   const BorrarFavorito = (deletedItem) => {
@@ -25,6 +24,15 @@ const FavoritosProvider = (props) => {
     console.log('arrayNuevo ',arrayNuevo)
     setFavoritos(arrayNuevo);    
   };
+
+  const EsFavorito = (idproyecto) => {
+    const result = favoritos.find(({ id }) => id === idproyecto)
+    if (result == undefined) {
+      return true
+    } else {
+      return false
+    }
+  }
 
   useEffect(()=>{
     localStorage.setItem("favoritos", JSON.stringify(favoritos));
@@ -38,6 +46,7 @@ const FavoritosProvider = (props) => {
         AgregarFavorito,
         ResetearFavoritos,
         BorrarFavorito,
+        EsFavorito,
       }}
     >
       {props.children}

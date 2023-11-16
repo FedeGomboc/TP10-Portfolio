@@ -6,9 +6,7 @@ import {Grid} from "@mui/material";
 
 
 export default function Favoritos() {
-  const { favoritos, ResetearFavoritos, cantidadFavoritos, BorrarFavorito } = useContext(FavoritosContext);
-
-
+  const { favoritos, ResetearFavoritos, cantidadFavoritos } = useContext(FavoritosContext);
 
   return (
     <>
